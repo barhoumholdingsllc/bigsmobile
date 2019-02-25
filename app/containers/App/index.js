@@ -11,18 +11,21 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import HomePage from 'containers/HomePage/Loadable';
+import OurServicesPage from 'containers/OurServicesPage/Loadable';
+import ContactUsPage from 'containers/ContactUsPage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 
-import GlobalStyle from '../../global-styles';
+import 'typeface-roboto/index.css';
 
 export default function App() {
   return (
     <div>
       <Switch>
         <Route exact path="/" component={HomePage} />
+        <Route exact path="/our-services" component={OurServicesPage} />
+        <Route exact path="/contact-us" component={ContactUsPage} />
         <Route component={NotFoundPage} />
       </Switch>
-      <GlobalStyle />
     </div>
   );
 }

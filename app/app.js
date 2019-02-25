@@ -14,7 +14,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'connected-react-router/immutable';
 import history from 'utils/history';
-import 'sanitize.css/sanitize.css';
+import CssBaseline from '@material-ui/core/CssBaseline';
 
 // Import root app
 import App from 'containers/App';
@@ -26,6 +26,11 @@ import LanguageProvider from 'containers/LanguageProvider';
 /* eslint-disable import/no-unresolved, import/extensions */
 import '!file-loader?name=[name].[ext]!./images/favicon.ico';
 import 'file-loader?name=.htaccess!./.htaccess';
+
+import '!!style-loader!css-loader!../vendor/css/bootstrap.min.css';
+import '!!style-loader!css-loader!../vendor/css/styles.css';
+import '!!style-loader!css-loader!../vendor/css/slick-theme.min.css';
+import '!!style-loader!css-loader!../vendor/css/slick.min.css';
 /* eslint-enable import/no-unresolved, import/extensions */
 
 import configureStore from './configureStore';
@@ -40,13 +45,16 @@ const MOUNT_NODE = document.getElementById('app');
 
 const render = messages => {
   ReactDOM.render(
-    <Provider store={store}>
-      <LanguageProvider messages={messages}>
-        <ConnectedRouter history={history}>
-          <App />
-        </ConnectedRouter>
-      </LanguageProvider>
-    </Provider>,
+    <div>
+      <CssBaseline />
+      <Provider store={store}>
+        <LanguageProvider messages={messages}>
+          <ConnectedRouter history={history}>
+            <App />
+          </ConnectedRouter>
+        </LanguageProvider>
+      </Provider>
+    </div>,
     MOUNT_NODE,
   );
 };
