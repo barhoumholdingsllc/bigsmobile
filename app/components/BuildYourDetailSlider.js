@@ -89,7 +89,7 @@ class BuildYourDetailSlider extends React.Component {
     ));
     return (
       <div>
-        <style>
+        <style jsx="true">
           {`
               .custom-previous,
               .custom-next {

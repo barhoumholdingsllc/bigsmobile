@@ -44,7 +44,7 @@ class HomeSlider extends React.Component {
     };
     return (
       <div>
-        <style jsx>
+        <style jsx="true">
           {`
             .custom-slide-first {
               background-image: url(${CoverCarImage});
@@ -172,6 +172,8 @@ function WebNextArrow(props) {
     <div
       className={className}
       style={{
+        ...style,
+        color: '#fff',
         position: 'fixed',
         right: '125px',
         zIndex: '9998',
@@ -190,6 +192,7 @@ function WebPrevArrow(props) {
       className={className}
       style={{
         ...style,
+        color: '#fff',
         position: 'fixed',
         left: '125px',
         zIndex: '9998',

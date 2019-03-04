@@ -129,7 +129,7 @@ class InteriorCarLabel extends Component {
 
   render() {
     return <div id={this.props.id}>
-      <style jsx>
+      <style jsx="true">
         {`
           `}
       </style>
