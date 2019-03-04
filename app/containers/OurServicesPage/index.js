@@ -279,7 +279,7 @@ class BuildYourDetail extends React.Component {
     console.log(this.state);
     return (
       <div>
-        <style jsx>
+        <style jsx="true">
           {`
             .custom-BYD-view-container {
               display: flex;

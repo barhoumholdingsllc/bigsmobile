@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
+import Fab from '@material-ui/core/Fab';
 
 const ScheduleDetail = () => (
   <div className="custom-call-to-action-container custom-bg-sub-footer-black custom-color-white">
@@ -12,9 +12,9 @@ const ScheduleDetail = () => (
       </div>
       <div className="custom-call-to-action-button">
         <a href="https://booking.appointy.com/BigsMobile" target="_blank">
-          <Button color="primary" variant="extendedFab">
+          <Fab color="primary" variant="extended">
             schedule a detail
-          </Button>
+          </Fab>
         </a>
       </div>
     </div>

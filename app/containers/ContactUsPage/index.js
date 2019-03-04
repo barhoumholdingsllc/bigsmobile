@@ -5,10 +5,10 @@ import GoogleMapReact from 'google-map-react';
 import Footer from 'components/Footer';
 import CallToAction from 'components/CallToAction';
 import TextField from '@material-ui/core/TextField';
-import Button from '@material-ui/core/Button';
 import Snackbar from '@material-ui/core/Snackbar';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
+import Fab from '@material-ui/core/Fab';
 
 import Axios from 'axios';
 
@@ -199,13 +199,13 @@ class ContactForm extends React.Component {
                   margin="normal"
                 />
                 <div className="d-flex justify-content-center align-items-center m-5">
-                  <Button
+                  <Fab
                     onClick={this.handleSubmit}
                     color="primary"
-                    variant="extendedFab"
+                    variant="extended"
                   >
                     send email
-                  </Button>
+                  </Fab>
                 </div>
               </form>
             </div>
