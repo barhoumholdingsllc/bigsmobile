@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import * as d3 from 'd3';
-import Interior from 'images/Interior.png';
+import Interior from 'images/interior.png';
 
 const platDetailLines = [
   { "points": "850, 450 850, 30", "text": "​Vacuum & Shampoo Carpets, Seats, and Crevices", "x": "600", "y": "20" , "opacity": ".5" , "decoration" : "none", "color": "white"}, // ​Vacuum & Shampoo Carpets, Seats, and Crevices
