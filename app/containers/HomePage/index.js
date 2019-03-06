@@ -19,6 +19,7 @@ import Footer from 'components/Footer';
 import CallToAction from 'components/CallToAction';
 import ViewSocialMedia from 'components/ViewSocialMedia';
 import ReviewsOfUs from 'components/ReviewsOfUs';
+import Reviews from 'components/Reviews';
 
 import HomeSlider from 'components/HomeSlider';
 
@@ -92,6 +93,7 @@ export default class HomePage extends React.PureComponent {
               </div>
             </div>
           </div>
+          <Reviews />
           <ViewSocialMedia />
           <ReviewsOfUs />
 

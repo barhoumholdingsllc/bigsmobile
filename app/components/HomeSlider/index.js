@@ -1,8 +1,8 @@
 import React from 'react';
 import Slider from 'react-slick';
 import Fab from '@material-ui/core/Fab';
-import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
-import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
+import KeyboardArrowLeftRounded from '@material-ui/icons/KeyboardArrowLeftRounded';
+import KeyboardArrowRightRounded from '@material-ui/icons/KeyboardArrowRightRounded';
 import { Link } from 'react-router-dom';
 import CoverCarImage from 'images/cover-car-image.jpg';
 import ScheduleDetailButton from '../ScheduleDetailButton';
@@ -174,7 +174,7 @@ function WebNextArrow(props) {
       }}
       onClick={onClick}
     >
-      <KeyboardArrowRight />
+      <KeyboardArrowRightRounded fontSize="large" />
     </div>
   );
 }
@@ -193,7 +193,7 @@ function WebPrevArrow(props) {
       }}
       onClick={onClick}
     >
-      <KeyboardArrowLeft />
+      <KeyboardArrowLeftRounded fontSize="large" />
     </div>
   );
 }

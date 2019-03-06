@@ -3,9 +3,7 @@ import React from 'react';
 const ReviewsOfUs = () => (
   <div className="custom-call-to-action-container custom-bg-black custom-color-white">
     <div className="custom-call-to-action-section container">
-      <div className="custom-mb-40">
-        <h3 className="custom-font-h3">Our Reviews</h3>
-      </div>
+      <h3 className="custom-font-h3">Our Reviews</h3>
       <div className="custom-mb-40 molten-leading">
         <div className="custom-rou-iframe-container">
           <iframe
