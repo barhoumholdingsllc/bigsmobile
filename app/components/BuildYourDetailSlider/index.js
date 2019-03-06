@@ -1,16 +1,9 @@
 import React from 'react';
-import {
-  Carousel,
-  CarouselItem,
-  CarouselControl,
-  CarouselIndicators,
-  CarouselCaption,
-} from 'reactstrap';
+import { Carousel, CarouselItem, CarouselIndicators } from 'reactstrap';
 import LeftArrow from 'images/left-arrow32.png';
 import RightArrow from 'images/right-arrow32.png';
-import ExteriorCarLabel from './ExteriorCarLabel';
-import InteriorCarLabel from './InteriorCarLabel';
-
+import ExteriorCarLabel from '../ExteriorCarLabel';
+import InteriorCarLabel from '../InteriorCarLabel';
 
 const items = [
   {
@@ -21,7 +14,7 @@ const items = [
   },
 ];
 
-class BuildYourDetailSlider extends React.Component {
+class BuildYourDetailSlider extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = { activeIndex: 0 };
@@ -91,25 +84,25 @@ class BuildYourDetailSlider extends React.Component {
       <div>
         <style jsx="true">
           {`
-              .custom-previous,
-              .custom-next {
-                cursor: pointer;
-              }
-              .custom-carousel-control-prev-icon {
-                  display: inline-block;
-                  width: 32px;
-                  height: 32px;
-                  background: tranparent no-repeat center center;
-                  background-image: url(${LeftArrow});
-                }
-              .custom-carousel-control-next-icon {
-                display: inline-block;
-                  width: 32px;
-                  height: 32px;
-                  background: tranparent no-repeat center center;
-                background-image: url(${RightArrow});
-              }
-                `}
+            .custom-previous,
+            .custom-next {
+              cursor: pointer;
+            }
+            .custom-carousel-control-prev-icon {
+              display: inline-block;
+              width: 32px;
+              height: 32px;
+              background: tranparent no-repeat center center;
+              background-image: url(${LeftArrow});
+            }
+            .custom-carousel-control-next-icon {
+              display: inline-block;
+              width: 32px;
+              height: 32px;
+              background: tranparent no-repeat center center;
+              background-image: url(${RightArrow});
+            }
+          `}
         </style>
         <Carousel
           activeIndex={activeIndex}

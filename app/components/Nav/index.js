@@ -4,7 +4,7 @@ import Button from '@material-ui/core/Button';
 import { Collapse, Navbar, Nav, NavItem } from 'reactstrap';
 import BigsLogo from 'images/bigs-mobile-detailing-logo.png';
 
-export class NavigationBar extends React.Component {
+class NavigationBar extends React.Component {
   constructor(props) {
     super(props);
 
@@ -41,19 +41,28 @@ export class NavigationBar extends React.Component {
         <Collapse isOpen={this.state.isOpen} navbar>
           <Nav className="mr-auto mt-2 mb-2 w-100" navbar>
             <NavItem className="m-1">
-              <Link className="nav-item custom-naked-a nav-link" to="/">Home
+              <Link className="nav-item custom-naked-a nav-link" to="/">
+                Home
               </Link>
             </NavItem>
             <NavItem className="m-1">
-              <Link className="nav-item custom-naked-a nav-link" to="/our-services">Our services
+              <Link
+                className="nav-item custom-naked-a nav-link"
+                to="/our-services"
+              >
+                Our services
               </Link>
             </NavItem>
             <NavItem className="m-1">
-              <Link className="nav-item custom-naked-a nav-link" to="/contact-us">Contact us
+              <Link
+                className="nav-item custom-naked-a nav-link"
+                to="/contact-us"
+              >
+                Contact us
               </Link>
             </NavItem>
             <NavItem className="m-1">
-              <a 
+              <a
                 className="nav-item custom-naked-a nav-link"
                 href="https://booking.appointy.com/BigsMobile"
                 target="_blank"

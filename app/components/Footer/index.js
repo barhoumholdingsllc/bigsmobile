@@ -50,12 +50,14 @@ const Footer = () => (
             </Link>
           </div>
           <div className="custom-footer-navigation-items">
-            <Link className="custom-naked-a" to="/our-services">Our Services
+            <Link className="custom-naked-a" to="/our-services">
+              Our Services
             </Link>
           </div>
           <div className="custom-footer-navigation-items">Careers</div>
           <div className="custom-footer-navigation-items">
-            <Link className="custom-naked-a" to="/contact-us">Contact Us
+            <Link className="custom-naked-a" to="/contact-us">
+              Contact Us
             </Link>
           </div>
         </div>
@@ -64,14 +66,14 @@ const Footer = () => (
       <div className="custom-footer-copyright-terms-of-service d-flex align-items-center">
         <Link className="custom-naked-a custom-bring-to-front" to="/">
           <img
-              src={BigsLogo}
-              alt="bigs mobile detailing logo"
-              width="50"
-              height="50"
-            />
+            src={BigsLogo}
+            alt="bigs mobile detailing logo"
+            width="50"
+            height="50"
+          />
         </Link>
         <Link className=" custom-naked-a custom-bring-to-front" to="/">
-            <div>&copy; Big's Mobile Detailing</div>
+          <div>&copy; Big's Mobile Detailing</div>
         </Link>
       </div>
     </div>

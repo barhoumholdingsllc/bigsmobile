@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import ReactGA from 'react-ga';
 
-import CallToActionButton from './CallToActionButton';
+import FixedBRButton from '../FixedBRButton';
 
 // const Layout = (props) => (
 //     <div>
@@ -21,7 +21,7 @@ export default class Layout extends Component {
     return (
       <div>
         {this.props.children}
-        <CallToActionButton />
+        <FixedBRButton />
       </div>
     );
   }

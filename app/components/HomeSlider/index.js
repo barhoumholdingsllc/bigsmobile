@@ -1,9 +1,11 @@
 import React from 'react';
 import Slider from 'react-slick';
-import Button from '@material-ui/core/Button';
-import { KeyboardArrowLeft, KeyboardArrowRight } from '@material-ui/icons';
+import Fab from '@material-ui/core/Fab';
+import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
+import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 import { Link } from 'react-router-dom';
 import CoverCarImage from 'images/cover-car-image.jpg';
+import ScheduleDetailButton from '../ScheduleDetailButton';
 
 class HomeSlider extends React.Component {
   constructor(props) {
@@ -73,21 +75,13 @@ class HomeSlider extends React.Component {
                 <h2 className="custom-font-h2 custom-mb-40">Detailed.</h2>
                 <div className="custom-row">
                   <div className="custom-mlr-10">
-                    <a
-                      className="custom-bring-to-front"
-                      href="https://booking.appointy.com/BigsMobile"
-                      target="_blank"
-                    >
-                      <Button color="primary" variant="extendedFab">
-                        schedule a detail
-                      </Button>
-                    </a>
+                    <ScheduleDetailButton />
                   </div>
                   <div className="custom-mlr-10">
                     <Link to="/our-services">
-                      <Button color="secondary" variant="extendedFab">
+                      <Fab color="secondary" variant="extended">
                         Our services
-                      </Button>
+                      </Fab>
                     </Link>
                   </div>
                 </div>

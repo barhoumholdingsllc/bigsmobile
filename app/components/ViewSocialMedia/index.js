@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
+import Fab from '@material-ui/core/Fab';
 
 const ViewSocialMedia = () => (
   <div className="custom-call-to-action-container parallax custom-color-white d-flex justify-content-center align-items-center">
@@ -13,9 +13,9 @@ const ViewSocialMedia = () => (
       </div>
       <div>
         <a href="https://www.instagram.com/bigsmobile/" target="_blank">
-          <Button color="primary" variant="extendedFab">
+          <Fab color="primary" variant="extended">
             View instagram
-          </Button>
+          </Fab>
         </a>
       </div>
     </div>

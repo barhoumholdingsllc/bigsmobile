@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
+import Fab from '@material-ui/core/Fab';
 
 const CallToAction = () => (
   <div className="custom-call-to-action-container custom-bg-sub-footer-black custom-color-white">
@@ -13,9 +13,9 @@ const CallToAction = () => (
       </div>
       <div className="custom-call-to-action-button">
         <a href="https://goo.gl/forms/JhqbslNCUo4EsZ1j2" target="_blank">
-          <Button color="primary" variant="extendedFab">
+          <Fab color="primary" variant="extended">
             Apply now!
-          </Button>
+          </Fab>
         </a>
       </div>
     </div>
