@@ -39,32 +39,6 @@ class SimpleMap extends React.PureComponent {
   }
 }
 
-const ContactUsPage = () => (
-  <Layout title="Contact Us">
-    <div className="custom-main-container">
-      <Nav />
-      <div className="custom-content-container">
-        <div className="custom-bg-black custom-color-white">
-          <div className="container pt-5 pb-5">
-            <h1 className="custom-font-h1 mb-5">Contact Us</h1>
-            <div>We want to hear from you!</div>
-          </div>
-        </div>
-
-        <div className="custom-contact-form">
-          <ContactForm />
-        </div>
-        <div>
-          <div className="overlay" />
-          <SimpleMap />
-        </div>
-      </div>
-      <CallToAction />
-      <Footer />
-    </div>
-  </Layout>
-);
-
 const initialState = {
   name: '',
   email: '',
@@ -209,10 +183,13 @@ class ContactForm extends React.Component {
                 </div>
               </form>
             </div>
-            <div>
-              <div className="overlay" />
-              <SimpleMap />
-            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1371269.7597904876!2d-122.331484!3d47.834532!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xefef99bfe1a38bda!2sBig&#39;s+Mobile+Detailing!5e0!3m2!1sen!2sus!4v1552274714781"
+              height="450"
+              frameBorder="0"
+              className="w-100"
+              allowFullScreen
+            />
           </div>
           <CallToAction />
           <Footer />
