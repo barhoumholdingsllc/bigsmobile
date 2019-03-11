@@ -1,9 +1,10 @@
 import React from 'react';
 import { Carousel, CarouselItem, CarouselIndicators } from 'reactstrap';
-import LeftArrow from 'images/left-arrow32.png';
-import RightArrow from 'images/right-arrow32.png';
+import KeyboardArrowLeftRounded from '@material-ui/icons/KeyboardArrowLeftRounded';
+import KeyboardArrowRightRounded from '@material-ui/icons/KeyboardArrowRightRounded';
 import ExteriorCarLabel from '../ExteriorCarLabel';
 import InteriorCarLabel from '../InteriorCarLabel';
+import 'animate.css/animate.min.css';
 
 const items = [
   {
@@ -93,14 +94,14 @@ class BuildYourDetailSlider extends React.PureComponent {
               width: 32px;
               height: 32px;
               background: tranparent no-repeat center center;
-              background-image: url(${LeftArrow});
+              background-image: url(${KeyboardArrowLeftRounded});
             }
             .custom-carousel-control-next-icon {
               display: inline-block;
               width: 32px;
               height: 32px;
               background: tranparent no-repeat center center;
-              background-image: url(${RightArrow});
+              background-image: url(${KeyboardArrowRightRounded});
             }
           `}
         </style>
@@ -118,20 +119,20 @@ class BuildYourDetailSlider extends React.PureComponent {
           />
           {slides}
           <a
-            className="custom-previous carousel-control-prev animated infinite pulse"
+            className="custom-previous carousel-control-prev animated slower infinite flash"
             role="button"
             tabIndex="0"
             onClick={this.previous}
           >
-            <span className="custom-carousel-control-prev-icon" aria-hidden />
+            <KeyboardArrowLeftRounded fontSize="large" className="custom-color-turqoise"/>
           </a>
           <a
-            className="custom-next carousel-control-next animated infinite pulse"
+            className="custom-next carousel-control-next animated slower infinite flash"
             role="button"
             tabIndex="0"
             onClick={this.next}
           >
-            <span className="custom-carousel-control-next-icon" aria-hidden />
+            <KeyboardArrowRightRounded fontSize="large" className="custom-color-turqoise"/>
           </a>
         </Carousel>
       </div>

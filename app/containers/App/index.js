@@ -16,7 +16,6 @@ import ContactUsPage from 'containers/ContactUsPage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 
 import 'typeface-roboto/index.css';
-
 export default function App() {
   return (
     <div>
