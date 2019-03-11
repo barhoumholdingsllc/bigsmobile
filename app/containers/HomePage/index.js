@@ -40,53 +40,72 @@ export default class HomePage extends React.PureComponent {
               <div className="row-one">
                 <div
                   id="cell-one"
-                  className="custom-bg-black custom-color-white custom-grid-cell molten-leading"
+                  className="w-100 custom-bg-black custom-color-white custom-grid-cell molten-leading"
                 >
-                  <h3 className="custom-font-h3 w-100">About us</h3>
+                  <h3 className="custom-font-h3 w-100">Quality</h3>
                   <div className="custom-mb-40">
-                    Our detailing products are top notch. Many of them come from
-                    Wesmar out of Mukilteo Washington. Our processes are fine
-                    tuned and we have the best interior and exterior mobile
-                    detailing services in the Seattle area.
+                    All of our products are locally sourced, from Mukilteo
+                    Washington, and the the highest quality on the market! Our
+                    auto detailers are well trained and have a strong
+                    understanding of how to perform the perfect auto detail.
+                    From the washing and drying of the paint, to the vacuuming
+                    of the interior, our team is focused on making your vehicle
+                    look brand new!
                   </div>
-                  <Fab variant="extended">Schedule an appointment</Fab>
+                  <Fab variant="extended">View our past work</Fab>
                 </div>
 
-                <div id="cell-two" className="custom-grid-cell molten-leading">
-                  <h3 className="custom-font-h3 w-100">History</h3>
+                <div
+                  id="cell-two"
+                  className="w-100 custom-grid-cell molten-leading"
+                >
+                  <h3 className="custom-font-h3 w-100">Convenient</h3>
                   <div className="custom-mb-40">
-                    Our detailing products are top notch. Many of them come from
-                    Wesmar out of Mukilteo Washington. Our processes are fine
-                    tuned and we have the best interior and exterior mobile
-                    detailing services in the Seattle area.
+                    Our company was built around making it simple and affordable
+                    for the everyday person to get their car detailed. Whether
+                    it’s in your driveway, at your workplace, or at a friend’s
+                    house, we want you to be able to fit an auto detailing
+                    appointment into your schedule! Just use our online booking
+                    to find a date that works for you, tell us where you would
+                    like to have your car detailed, and we will be there. It’s
+                    really that easy!
                   </div>
-                  <Fab variant="extended">Schedule an appointment</Fab>
+                  <Fab variant="extended">View our services</Fab>
                 </div>
               </div>
+              <ReviewsOfUs />
               <div className="row-two">
                 <div
                   id="cell-three"
-                  className=" custom-bg-black custom-color-white custom-grid-cell molten-leading"
+                  className="w-100 custom-bg-black custom-color-white custom-grid-cell molten-leading"
                 >
-                  <h3 className="custom-font-h3 w-100">Our services</h3>
+                  <h3 className="custom-font-h3 w-100">Detailed</h3>
                   <div className="custom-mb-40">
-                    Our detailing products are top notch. Many of them come from
-                    Wesmar out of Mukilteo Washington. Our processes are fine
-                    tuned and we have the best interior and exterior mobile
-                    detailing services in the Seattle area.
+                    Whether it’s applying wax to the paint, or cleaning the
+                    interior, every step of the processes requires taking the
+                    extra time to attention to detail. This is why our auto
+                    detailers only have 1 or 2 appointments per day! We want
+                    your car to be their main focus. Along with that, our auto
+                    detailers are thoroughly vetted and trained. Only about 1/20
+                    applicants become auto detailers, and about 1/10 auto
+                    detailers come on full time after training. We want the best
+                    people with the best products working on your vehicle.
                   </div>
-                  <Fab variant="extended">Schedule an appointment</Fab>
+                  <Fab variant="extended">Contact us</Fab>
                 </div>
                 <div
                   id="cell-four"
-                  className=" custom-grid-cell molten-leading"
+                  className="w-100 custom-grid-cell molten-leading"
                 >
-                  <h3 className="custom-font-h3 w-100">Schedule now!</h3>
+                  <h3 className="custom-font-h3 w-100">Local</h3>
                   <div className="custom-mb-40">
-                    Our detailing products are top notch. Many of them come from
-                    Wesmar out of Mukilteo Washington. Our processes are fine
-                    tuned and we have the best interior and exterior mobile
-                    detailing services in the Seattle area.
+                    Big’s Mobile Detailing started in Edmonds washington in
+                    2014. We have now serviced thousands of vehicles from
+                    Bellingham all the way to downtown Seattle. Whether you’re
+                    on the east side in the Kirkland and Bellevue area, or
+                    you’re on the Shoreline, Ballard, and Lynnwood side of town,
+                    we are your local auto detailer! Give us a call and we will
+                    come to you wherever you’re at in the Puget Sound!
                   </div>
                   <Fab variant="extended">Schedule a detail</Fab>
                 </div>
@@ -95,8 +114,6 @@ export default class HomePage extends React.PureComponent {
           </div>
           <Reviews />
           <ViewSocialMedia />
-          <ReviewsOfUs />
-
           <CallToAction />
           <Footer />
         </div>

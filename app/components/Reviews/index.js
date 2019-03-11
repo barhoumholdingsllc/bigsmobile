@@ -1,5 +1,4 @@
 import React from 'react';
-import Fab from '@material-ui/core/Fab';
 import StarRounded from '@material-ui/icons/StarRounded';
 import Facebook from 'images/facebook128x128.png';
 import Yelp from 'images/yelp128x128.png';
@@ -34,7 +33,7 @@ const Reviews = () => (
           <img className="mb-3" width="64" height="64" src={Yelp} alt="yelp" />
           <div className="pb-3 d-flex align-center">
             <StarRounded />
-            <span className="d-flex align-items-center">4.9/5</span>
+            <span className="d-flex align-items-center">4.3/5</span>
           </div>
           <div className="custom-review-quote pl-3 pr-3">
             "It was beyond what I was expecting and definitely met my
@@ -54,7 +53,7 @@ const Reviews = () => (
           />
           <div className="pb-3 d-flex align-center">
             <StarRounded />
-            <span className="d-flex align-items-center">4.9/5</span>
+            <span className="d-flex align-items-center">4.6/5</span>
           </div>
           <div className="custom-review-quote pl-3 pr-3">
             "Thank you for the quick service, the punctuality and the amazing
