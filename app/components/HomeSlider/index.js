@@ -6,6 +6,7 @@ import KeyboardArrowRightRounded from '@material-ui/icons/KeyboardArrowRightRoun
 import { Link } from 'react-router-dom';
 import CoverCarImage from 'images/cover-car-image.jpg';
 import ScheduleDetailButton from '../ScheduleDetailButton';
+import BMWExterior from 'images/BMW exterior.jpg'
 
 class HomeSlider extends React.Component {
   constructor(props) {
@@ -54,6 +55,7 @@ class HomeSlider extends React.Component {
             .custom-slide-second {
               background-color: #17252a;
               color: #feffff;
+              background-image: url(${BMWExterior});
             }
             .custom-slide-third {
               background-color: #2b7a78;
